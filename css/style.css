@@ -80,6 +80,7 @@
 	padding: 50px 0;
 }
 .image-wraper img{
+	max-width: 270px;
 	width: 100%;
 	display: block;
 }
@@ -89,6 +90,10 @@
 .image-wraper h3{
 	background-color: aqua;
 	padding: 20px;
+}
+.images-flex{
+	display: flex;
+	flex-wrap: wrap;
 }
 /*grey-lihgt bg*/
 .grey-light-bg{
@@ -162,6 +167,17 @@
     .image-wraper:last-child{
     	display: none;
     }
+    .image-wraper{
+    	width: 32%;
+    }
+    .image-wraper img{
+    	width: 100%;
+    }
+}
+@media (max-width: 768px){
+	.image-wraper{
+		width: 48%;
+	}
 }
 @media (max-width: 480px){
 	.social-li:not(.active){
@@ -172,6 +188,9 @@
 	}
 	.wraper-flex p{
 		margin-left: 0;
+	}
+	..image-wraper{
+		width: 100%;
 	}
 }
 @media (max-width: 400px){
