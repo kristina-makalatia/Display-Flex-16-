@@ -22,7 +22,7 @@
 <body>
 	<div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
-	<header>
+	<header class="header-wraper">
 		<div class="container">
 			<div class="d-flex">
 				<a class="logo" href="#">
@@ -141,11 +141,42 @@
 					</div>
 					<p class="read"> read more </p>
 				</div>
-
 			</div>
+		</div>		
+	</section>
+	<section>
+		<div class="container">
+			<div class="bg-image"></div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<form class="form-wraper">
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" name="name" id="name" placeholder="Your name"  required>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="Email" name="email" class="input-form" id="email" placeholder="Your email"  required>
+				</div>
+				<div class="form-group">
+					<label for="phone">Phone</label>
+					<input type="number" name="phone" id="phone" placeholder="Your phone"  required>
+				</div>
+				<div class="form-group">
+					<label for="password">password</label>
+					<input type="password" maxlength="4" name="mypassword" id="password" placeholder="Your name"  required>
+				</div>
+				<div class="form-group">
+					<label>write your review</label>
+					<textarea name="message" placeholder="write your text"></textarea>
+				</div>
+
+				<button type="submit" value="Submit" class="btn-submit">Submit</button>
+			</form>
 
 		</div>
-		
 	</section>
 
 

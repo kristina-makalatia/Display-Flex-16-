@@ -8,17 +8,36 @@
 }
 /*base classes*/
 .d-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.header-wraper{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,207cca+32,2989d8+40,207cca+62,7db9e8+100 */
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1e5799 0%, #207cca 32%, #2989d8 40%, #207cca 62%, #7db9e8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #1e5799 0%,#207cca 32%,#2989d8 40%,#207cca 62%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #1e5799 0%,#207cca 32%,#2989d8 40%,#207cca 62%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
 }
 .navigation-ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .navigation-ul li{
 	margin-right: 15px;
 }
 .social-ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .social-li::after{
@@ -46,6 +65,8 @@
 	display: none;
 }
 .right-block{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 /*Blue-bg section*/
@@ -54,8 +75,12 @@
 	padding: 50px 0;
 }
 .video-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	/*align-items: center;*/
 }
 .video{
@@ -65,9 +90,15 @@
 	background-color: #fff;
 }
 .video{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .video iframe{
 	width: 100%;
@@ -80,8 +111,7 @@
 	padding: 50px 0;
 }
 .image-wraper img{
-	max-width: 270px;
-	width: 100%;
+	width: 270px;
 	display: block;
 }
 .image-wraper{
@@ -92,8 +122,11 @@
 	padding: 20px;
 }
 .images-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 /*grey-lihgt bg*/
 .grey-light-bg{
@@ -105,13 +138,23 @@
 	padding: 10px;
 }
 .box-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .wraper-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .wraper-flex img{
 	max-width: 110px;
@@ -122,10 +165,21 @@
 	margin-left: 30px;
 }
 .read{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
-
+.bg-image{
+	background-image: url('https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+	height: 300px;
+	width: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 /*About-page*/
 .image-float{
 	float: left;
@@ -136,8 +190,47 @@
 }
 
 
+/*contact page*/
+.form-wraper{
+	max-width: 650px;
+	width: 100%;
+	margin:0 auto;
+}
+.form-group{
+	margin-top:15px;
+}
+input{
+	width: 100%;
+	padding: 15px;
+	border:none;	
+	border-bottom: 1px solid green;
+	/*background-color: transparent;*/
+}
+input::placeholder{
+	color:aqua;
+}
+input:focus{
+	outline: none;
+}
+textarea{
+	width: 100%;
+	resize: none;
+}
+.btn-submit{
+	padding: 10px;
+	background-color: red;
+	font-size:22px;
+	border:none;
+}
+.btn-submit:hover{
+	background-color: aqua;
+}
+/*input[type=text]{
+	width:100%;
+}
+input[type=password]{
 
-
+}*/
 /*Responsive*/
 @media (max-width: 1170px){
 	.container{
@@ -146,14 +239,20 @@
 	.video-flex{
 		/*flex-wrap: wrap;
 		justify-content: center;*/
-		flex-direction: column;
-		align-items: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}
 	.video:last-child{
 		margin-top:30px;
 	}
 	.box-flex{
-    	flex-wrap: wrap;
+    	-ms-flex-wrap: wrap;
+    	    flex-wrap: wrap;
     }
 }
 @media (max-width: 1024px){
@@ -173,6 +272,9 @@
     .image-wraper img{
     	width: 100%;
     }
+    .bg-image{
+    	background-image: url('https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg');
+    }
 }
 @media (max-width: 768px){
 	.image-wraper{
@@ -180,16 +282,20 @@
 	}
 }
 @media (max-width: 480px){
+
 	.social-li:not(.active){
        display: none;
 	}
 	.wraper-flex{
-		flex-direction:column;
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		    -ms-flex-direction:column;
+		        flex-direction:column;
 	}
 	.wraper-flex p{
 		margin-left: 0;
 	}
-	..image-wraper{
+	.image-wraper{
 		width: 100%;
 	}
 }
