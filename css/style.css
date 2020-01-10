@@ -1,11 +1,3 @@
-.container{
-	max-width:1170px;
-	width:100%;
-	margin: 0 auto;
-}
-.logo img{
-	width: 100px;
-}
 /*base classes*/
 .d-flex{
 	display: -webkit-box;
@@ -18,6 +10,13 @@
 	    -ms-flex-align: center;
 	        align-items: center;
 }
+.container{
+	max-width:1170px;
+	width:100%;
+	margin: 0 auto;
+}
+
+/*Header*/
 .header-wraper{
 	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,207cca+32,2989d8+40,207cca+62,7db9e8+100 */
 	background: #1e5799; /* Old browsers */
@@ -25,7 +24,6 @@
 	background: -webkit-linear-gradient(top,  #1e5799 0%,#207cca 32%,#2989d8 40%,#207cca 62%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom,  #1e5799 0%,#207cca 32%,#2989d8 40%,#207cca 62%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-
 }
 .navigation-ul{
 	display: -webkit-box;
@@ -34,6 +32,9 @@
 }
 .navigation-ul li{
 	margin-right: 15px;
+}
+.logo img{
+	width: 100px;
 }
 .social-ul{
 	display: -webkit-box;
@@ -69,6 +70,7 @@
 	display: -ms-flexbox;
 	display: flex;
 }
+
 /*Blue-bg section*/
 .blue-bg{
 	background:blue;
@@ -128,6 +130,7 @@
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 }
+
 /*grey-lihgt bg*/
 .grey-light-bg{
 	background-color: #E6E6E6;
@@ -172,6 +175,8 @@
 	    -ms-flex-pack: end;
 	        justify-content: flex-end;
 }
+
+/*Background-image*/
 .bg-image{
 	background-image: url('https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
 	height: 300px;
@@ -180,6 +185,7 @@
 	background-size: cover;
 	background-position: center;
 }
+
 /*About-page*/
 .image-float{
 	float: left;
@@ -231,6 +237,9 @@ textarea{
 input[type=password]{
 
 }*/
+
+
+
 /*Responsive*/
 @media (max-width: 1170px){
 	.container{
